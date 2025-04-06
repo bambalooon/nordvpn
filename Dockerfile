@@ -1,8 +1,6 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
-LABEL maintainer="Julio Gutierrez julio.guti+nordvpn@pm.me"
 
-ARG NORDVPN_VERSION=3.20.0
-ARG DEBIAN_FRONTEND=noninteractive
+ARG NORDVPN_VERSION=3.20.1
 
 RUN apt-get update -y && \
     apt-get install -y curl iputils-ping libc6 wireguard && \
